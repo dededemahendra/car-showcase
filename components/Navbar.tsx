@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link href='/' className='flex justify-center items-center'>
           <Image src='/logo.svg' alt='Car Hub Logo' width={118} height={18} className='object-contain' />
         </Link>
-        <CustomButton title='Sign In' btnType='button' containerStyles='text-white rounded-full outline-blue min-w-[130px]' />
+        <CustomButton title='Sign In' btnType='button' containerStyles='text-blue-700 rounded-full outline-blue min-w-[130px]' />
       </nav>
     </header>
   );

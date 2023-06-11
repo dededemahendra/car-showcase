@@ -18,7 +18,7 @@ const Footer = () => {
         <div className='footer__links'>
           {footerLinks.map((link) => (
             <div key={link.title} className='footer__link'>
-              <h3 className='font-bol'>{link.title}</h3>
+              <h3 className='font-bold'>{link.title}</h3>
               {link.links.map((item) => (
                 <Link key={item.title} href={item.url} className='tex-gray-500'>
                   {item.title}
@@ -26,6 +26,13 @@ const Footer = () => {
               ))}
             </div>
           ))}
+        </div>
+        <div className="flex sm:flex-col sm:justify-start gap-5 justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
+          <p>@2023 CarHub. All Rights Reserved</p>
+          <div className='flex gap-5'> 
+            <Link href='/'className='text-gray-500' >Privacy and Policy</Link>
+            <Link href='/'className='text-gray-500' >Term of use</Link>
+          </div>
         </div>
       </div>
     </footer>
